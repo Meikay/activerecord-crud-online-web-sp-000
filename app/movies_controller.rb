@@ -29,8 +29,8 @@ def can_be_created_in_a_block(args = 0)
   # release_date == 1990
 
   Movie.create do |m|
-    m.text :title
-    m.datetime :release_date
+    :title => "Home Alone",
+    :release_date => "1990"
   end
 end
 
